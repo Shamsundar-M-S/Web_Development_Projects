@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment - Meowl's Market</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body data-page="payment">
+  <header>
+    <div class="container nav">
+      <div class="brand-flex">
+        <img src="https://i.kym-cdn.com/entries/icons/facebook/000/053/804/meowl-meme-header.jpg" class="brand-logo">
+        <p class="brand-name">Meowl's Marketplace</p>
+      </div>
+      <nav class="menu">
+        <a href="/index.html">Home</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/pages/about.html">About</a>
+      </nav>
+      <div class="actions">
+        <a href="../pages/wishlist.html"><button class="btn outline">Wishlist (<span id="wishlist-count">0</span>)</button></a>
+        <a href="../pages/cart.html"><button class="btn outline">Cart (<span id="cart-count">0</span>)</button></a>
+        <a href="../pages/orders.html"><button class="btn outline">Orders (<span id="orders-count">0</span>)</button></a>
+        <a href="/pages/auth.html"><button class="btn">Account</button></a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="card">
+      <h2>Payment</h2>
+      <form id="payment-form">
+        <label>Name</label>
+        <input id="pay-name">
+        <label>Email</label>
+        <input id="pay-email" type="email">
+        <label>Address</label>
+        <textarea id="pay-address"></textarea>
+        <label>Card Number</label>
+        <input id="pay-card">
+        <button class="btn pay-btn" style="margin-top:10px">Pay Now</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">© 2025 Meowl's Market</footer>
+  <script src="/assets/script.js"></script>
+</body>
+</html>
